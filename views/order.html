@@ -3,23 +3,24 @@
 <body>
 <div class="container">
 	<h1>Food Order:</h1>
-	<form method="get" action="order2">
+	<form method="POST" action="order2">
 		<div class="input-group">
-			<label for="order">What would you like to order?</label>
-			<input type="text" id="order" name="order">
+			<label for="food">What would you like to order?</label>
+			<input type="text" id="food" name="food">
 		</div>
 		<div class="form-check">
-			<input class="form-check-input" type="radio" name="meal" id="breakfast">
+			<input class="form-check-input" type="radio" name="meal" id="breakfast" value="breakfast">
 			<label class="form-check-label" for="breakfast">Breakfast</label>
 		</div>
 		<div class="form-check">
-			<input class="form-check-input" type="radio" name="meal" id="lunch">
+			<input class="form-check-input" type="radio" name="meal" id="lunch" value="lunch">
 			<label class="form-check-label" for="lunch">Lunch</label>
 		</div>
 		<div class="form-check">
-			<input class="form-check-input" type="radio" name="meal" id="dinner">
+			<input class="form-check-input" type="radio" name="meal" id="dinner" value="dinner">
 			<label class="form-check-label" for="dinner">Dinner</label>
 		</div>
+		<br>
 		<input type="submit" id="submit-order" value="Next >>">
 	</form>
 </div>
