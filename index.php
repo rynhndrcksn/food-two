@@ -27,20 +27,20 @@ $f3->route('GET /', function() {
 
 // define an order route
 $f3->route('GET /order', function() {
-	// create a new view, then sends it to the client
-	echo 'Order route';
+	$view = new Template();
+	echo $view->render('views/order.html');
 });
 
 // define an order2 route
 $f3->route('GET /order2', function() {
-	// create a new view, then sends it to the client
-	echo 'Order route 2';
+	$view = new Template();
+	echo $view->render('views/order2.html');
 });
 
 // define an order route
 $f3->route('GET /summary', function() {
-	// create a new view, then sends it to the client
-	echo 'Summary route';
+	$view = new Template();
+	echo $view->render('views/summary.html');
 });
 
 // run fat free HAS TO BE THE LAST THING IN FILE
